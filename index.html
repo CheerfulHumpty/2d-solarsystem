@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolarSystem</title>
+    <style>
+      body{
+          background-color: rgb(0, 0, 0);
+      }
+         #sun{
+            position: absolute;
+            width: 70px;
+            height: 68px;
+            left: 47%;
+            top: 45%;
+            border-radius: 60px;
+            background-color: rgb(255, 196, 0);
+            box-shadow: 10px 10px 100px 100px rgb(235, 235, 78);
+        }
+        #orbit1{
+            position: absolute;
+            position: absolute;
+            width: 129px;
+            height: 129px;
+            left: 44.8%;
+            top: 40.5%;
+            border: 1px solid white;
+            border-radius: 65px;
+           
+        }
+        #orbit2{
+            position: absolute;
+            position: absolute;
+            width: 189px;
+            height: 187px;
+            left: 42.8%;
+            top: 36.1%;
+            border: 1px solid white;
+            border-radius: 178px;
+        }
+        #orbit3{
+            position: absolute;
+            position: absolute;
+            width: 249px;
+            height: 249px;
+            left: 40.7%;
+            top: 31.5%;
+            border: 1px solid white;
+            border-radius: 178px;
+        }
+        #orbit4{
+            position: absolute;
+            position: absolute;
+            width: 299px;
+            height: 299px;
+            left: 38.9%;
+            top: 28%;
+            border: 1px solid white;
+            border-radius: 178px;
+        }
+        #orbit5{
+            position: absolute;
+            position: absolute;
+            width: 399px;
+            height: 399px;
+            left: 35.4%;
+            top: 20.6%;
+            border: 1px solid white;
+            border-radius: 208px;
+        }
+        #orbit6{
+            position: absolute;
+            width: 479px;
+            height: 479px;
+            left: 32.65%;
+            top: 14.9%;
+            border: 1px solid white;
+            border-radius: 298px;
+        }
+        #orbit7{
+            position: absolute;
+            width: 569px;
+            height: 569px;
+            left: 29.5%;
+            top: 8.2%;
+            border: 1px solid white;
+            border-radius: 298px;
+        }
+        #orbit8{
+            position: absolute;
+            width: 643px;
+            height: 643px;
+            left: 27%;
+            top: 2.5%;
+            border: 1px solid white;
+            border-radius: 348px;
+        }
+        #mars{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 17%;
+            border-radius: 50px;
+            background-color: rgb(104, 6, 6);
+        }
+        #mercury{
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            left: 5%;
+            border-radius: 50px;
+            background-color: rgb(85, 57, 47);
+        }
+        #moon{
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            left: -35%;
+            border-radius: 50px;
+            background-color: rgb(255, 255, 255);
+        }
+        #m1{
+            position: absolute;
+            width: 13px;
+            height: 13px;
+            top: 0%;
+            left: 105%;
+            border-radius: 50px;
+            background-color: rgb(230, 175, 113);
+        }
+        #m2{
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            top: -20%;
+           left: -20%;
+            border-radius: 50px;
+            background-color: rgb(131, 90, 14);
+        }
+        #m3{
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            left: -20%;
+            top: 30%;
+            border-radius: 60px;
+            background-color: rgb(160, 146, 67);
+        }
+        #m4{
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 30%;
+             top: 85%;
+            border-radius: 50px;
+            background-color: rgb(255, 255, 255);
+        }
+        #venus{
+            position: absolute;
+            width: 23px;
+            height: 23px;
+            top: 80%;
+            left: 19%;
+            border-radius: 50px;
+            background-color: rgb(128, 72, 8);
+        }
+        #earth{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: 80%;
+            left: 19%;
+            border-radius: 50px;
+            background-color: rgb(3, 90, 141);
+        }
+        #uranus{
+            position: absolute;
+            width: 38px;
+            height: 38px;
+            top: 80%;
+            left: 11%;
+            border-radius: 50px;
+            background-color: rgb(6, 251, 198);
+        }
+        #neptune{
+            position: absolute;
+            width: 34px;
+            height: 34px;
+            top: 50%;
+            left: -2%;
+            border-radius: 50px;
+            background-color: rgb(21, 72, 102);
+        }
+        #jupiter{
+            position: absolute;
+            width: 68px;
+            height: 68px;
+            top: 80%;
+            left: 16.2%;
+            border-radius: 50px;
+            background-color: rgb(223, 172, 90);
+        }
+        #ring{
+            position: absolute;
+            width: 68px;
+            height: 68px;
+            top: -53%;
+            left: -18.2%;
+            border-radius: 50px;
+          border: 2.2px solid rgb(131, 54, 2);
+        }
+        #saturn{
+            position: absolute;
+            width: 51px;
+            height: 51px;
+            top: 80%;
+            left: 11.8%;
+            border-radius: 50px;
+            background-color: rgb(184, 117, 11);
+        }
+        #strip1{
+            position: absolute;
+            width: 64px;
+            height: 10px;
+            left: 1.5%;
+            background: rgb(161, 10, 10);
+            border-radius: 10px;
+        }
+        #strip2{
+            position: absolute;
+            width: 64px;
+            height: 10px;
+            left: 3%;
+            top: 35%;
+            background: rgb(133, 4, 4);
+            border-radius: 10px;
+        }
+        #info{
+            position: absolute;
+            right: 3%;
+            top:-2%;
+            font-size: 40px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <p id="sun"></p>
+    <p id="orbit1"></p>
+    <p id="mercury"></p>
+    <p id="venus"></p>
+    <p id="orbit2"></p>
+    <p id="orbit3"></p>
+    <p id="orbit4"></p>
+    <p id="orbit5"></p>
+    <p id="orbit6"></p>
+    <p id="orbit7"></p>
+    <p id="orbit8"></p>
+    <p id="earth"></p>
+    <p id="mars"></p>
+    <p id="jupiter"></p>
+    <p id="saturn"></p>
+    <p id="neptune"></p>
+    <p id="uranus"></p>
+    <p id="ring"></p>
+    <p id="strip1"></p>
+    <p id="strip2"></p>
+    <p id="moon"></p>
+    <p id="m1"></p>
+    <p id="m2"></p>
+    <p id="m3"></p>
+    <p id="m4"></p>
+    <p id="info" onclick="myfunction()">?</p>
+</body>
+<script>
+    let global = false;
+    function myfunction(){
+    let speech = new SpeechSynthesisUtterance();
+    let info =document.getElementById("info")
+    speech.pitch = 100;
+    speech.volume = 2;
+    speech.rate = 0.8;
+    speech.text = "Hello! how are you ? I am doing great . this is a simple two d solar system model  . it contains all the 8 planets along with the sun . the sun is located in the center of the solar system and all planets revolve around the sun , as shown here . mercury is the closet planet to the sun , then venus , earth , mars  , jupiter , saturn , uranus and neptune .  with neptune being the eighth and the farthest planet from the sun . from the model you can see that the earth has a tiny dot revolving around the earth  , this is moon . you can also see moons revolving around jupiter . from here  , you can also see that the planet saturn has a  ring around it. this ring is composed of the dust particles  , ice and rocks . for more info check online. Thank you!";
+    speechSynthesis.speak(speech);
+    info.ondblclick = function(){
+        speechSynthesis.cancel()
+    }
+    
+    window.onload = function(){
+        speechSynthesis.pause()
+    }
+
+}
+    let orbit1 = document.getElementById("orbit1");
+    let orbit2 = document.getElementById("orbit2");
+    let orbit3 = document.getElementById("orbit3");
+    let mercury = document.getElementById("mercury");
+    let venus = document.getElementById("venus");
+    let earth = document.getElementById("earth")
+    let mars = document.getElementById("mars");
+    let orbit4 = document.getElementById("orbit4")
+    let jupiter = document.getElementById("jupiter");
+    let orbit5 = document.getElementById("orbit5")
+    let orbit6 = document.getElementById("orbit6")
+    let orbit7 = document.getElementById("orbit7")
+    let orbit8 = document.getElementById("orbit8")
+    let saturn = document.getElementById("saturn");
+    let uranus = document.getElementById("uranus");
+    let neptune = document.getElementById("neptune");
+    let ring = document.getElementById("ring");
+    let strip1 = document.getElementById("strip1");
+    let strip2 = document.getElementById("strip2");
+    let moon = document.getElementById("moon");
+    let m1 = document.getElementById("m1");
+    let m2 = document.getElementById("m2");
+    let m3 = document.getElementById("m3");
+    let m4 = document.getElementById("m4");
+    earth.append(moon);
+    jupiter.append(m1);
+    jupiter.append(m2);
+    jupiter.append(m3);
+    jupiter.append(m4);
+    orbit1.append(mercury);
+    orbit2.append(venus);
+    orbit3.append(earth);
+    orbit4.append(mars);
+    orbit5.append(jupiter);
+    orbit6.append(saturn);
+    orbit7.append(uranus);
+    orbit8.append(neptune);
+    saturn.append(ring)
+    jupiter.append(strip1);
+    jupiter.append(strip2);
+    let rotate = 0;
+    let rotate2 = 0;
+    let rotate3 = 0;
+    let rotate4 = 0;
+    let rotate5 = 0;
+    let rotate6 = 0;
+    let rotate7 = 0;
+    let rotate8 = 0;
+    let planetrotate = 0;
+    let earthrotate = 0;
+    window.onload = function(){
+        setInterval(function(){
+            rotate += 7;
+       orbit1.style.transform = "rotate("+rotate+"deg)";
+        } , 20)
+        setInterval(function(){
+            rotate2 += 3.5;
+       orbit2.style.transform = "rotate("+rotate2+"deg)";
+        } , 30)
+        setInterval(function(){
+            rotate3 += 4.0;
+      orbit3.style.transform = "rotate("+rotate3+"deg)";
+        } , 30)
+        setInterval(function(){
+            rotate4 += 1.5;
+       orbit4.style.transform = "rotate("+rotate4+"deg)";
+        } , 30)
+        setInterval(function(){
+            rotate5 += 1.5;
+       orbit5.style.transform = "rotate("+rotate5+"deg)";
+        } , 30)
+        setInterval(function(){
+            rotate6 +=0.5;
+       orbit6.style.transform = "rotate("+rotate6+"deg)";
+        } , 30)
+        setInterval(function(){
+            rotate7 +=0.8;
+       orbit7.style.transform = "rotate("+rotate7+"deg)";
+        } , 30)
+        setInterval(function(){
+            rotate8 += 0.9;
+       orbit8.style.transform = "rotate("+rotate8+"deg)";
+        } , 30)
+        setInterval(function(){
+            planetrotate += 5;
+       jupiter.style.transform = "rotate("+planetrotate+"deg)";
+        } , 30)
+        setInterval(function(){
+            earthrotate += 20;
+       earth.style.transform = "rotate("+earthrotate+"deg)";
+        } , 30)
+    }
+</script>
+</html>
